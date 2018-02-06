@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:context="com.example.shaha.lesson3.ScreenActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/screen_header_height"
+        android:layout_marginTop="15dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/image_icon"
+            android:layout_width="@dimen/screen_header_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/image_icon"
+            android:text="The Next Web "
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textview_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_title"
+            android:layout_marginRight="3dp"
+            android:layout_toEndOf="@+id/image_icon"
+            android:layout_toRightOf="@+id/image_icon"
+            android:text="30 min." />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_title"
+            android:layout_toEndOf="@+id/textview_time"
+            android:layout_toRightOf="@+id/textview_time"
+            android:padding="5dp"
+            android:src="@drawable/ic_public_black_24dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="15dp"
+            android:src="@drawable/ic_arrow_drop_down_black_24dp"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_top">
+
+        <TextView
+            android:id="@+id/text_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:text="The Note 7 was just TOO Powerfull"
+            android:textColor="#000"
+            android:textSize="16dp" />
+
+
+        <ImageView
+            android:id="@+id/image_fire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_screen"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/fire" />
+
+        <TextView
+            android:id="@+id/text_onpict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image_fire"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#fff"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="bottom"
+            android:text="We may finally know why the Samsung Note 7 kept catching fire"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+
+        <ImageView
+            android:id="@+id/icon_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_fire"
+            android:layout_marginTop="15dp"
+
+            android:src="@drawable/ic_thumb_up_black_24dp" />
+
+        <ImageView
+            android:id="@+id/icon_smile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_fire"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/icon_like"
+            android:src="@drawable/ic_sentiment_satisfied_black_24dp" />
+
+        <ImageView
+            android:id="@+id/icon_satisfied"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_fire"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/icon_smile"
+            android:src="@drawable/ic_sentiment_very_satisfied_black_24dp"
+
+            />
+
+        <TextView
+            android:id="@+id/text_views"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_fire"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/icon_satisfied"
+            android:text="280"
+            android:textColor="#878585"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/text_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/image_fire"
+            android:layout_marginTop="15dp"
+            android:text="17 comments" />
+
+        <TextView
+            android:id="@+id/text_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/icon_satisfied"
+            android:layout_marginTop="5dp"
+            android:background="#696868" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_line"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/like"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_thumb_up_black_24dp" />
+
+                <TextView
+                    android:id="@+id/text_like"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Like"
+                    android:textColor="#6e6e6c"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/comment"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_chat_bubble_black_24dp" />
+
+            <TextView
+                android:id="@+id/text_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="15dp"
+                android:text="Comment"
+                android:textColor="#6e6e6c"
+                android:textSize="20sp"
+
+                />
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/ic_redo_black_24dp"
+
+                />
+
+            <TextView
+                android:id="@+id/text_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:text="Share"
+                android:textColor="#6e6e6c"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

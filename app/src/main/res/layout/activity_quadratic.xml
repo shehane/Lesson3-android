@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    tools:context="com.example.shaha.lesson3.QuadraticActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUADRATIC FACTORIZER"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/formula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Your equation will be here"
+        android:textColor="#fff"
+        android:textColorHint="#9e9c9c"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:hint="a"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textColorHint="#9e9c9c"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="x^2"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="11sp"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_b"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="b"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textColorHint="#9e9c9c" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="x"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="11sp"
+            android:text="+"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_c"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="c"
+            android:gravity="center"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textColorHint="#9e9c9c" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp">
+
+        <Button
+            android:id="@+id/but_calc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#686666"
+            android:padding="23dp"
+            android:text="Calculate"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/but_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#686666"
+            android:text="Clear"
+            android:textColor="#fff"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_roots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:text="Roots For X"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="20sp"
+
+            />
+
+        <EditText
+            android:id="@+id/edit_root1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_roots"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#fff" />
+
+        <EditText
+            android:id="@+id/edit_root2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_root1"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
